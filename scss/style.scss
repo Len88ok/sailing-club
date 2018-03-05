@@ -1,4 +1,3 @@
-@import "base/_fonts";
 
 /*!
  * Bootstrap v4.0.0 (https://getbootstrap.com)
@@ -9,7 +8,7 @@
 @import "utils/variables";
 @import "../libs/bootstrap/scss/variables";
 
-
+@import "base/fonts";
 
 @import "../libs/bootstrap/scss/mixins";
 @import "../libs/bootstrap/scss/root";

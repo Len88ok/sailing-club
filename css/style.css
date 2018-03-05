@@ -1,3 +1,6 @@
+/*!
+ * Bootstrap v4.0.0 (https://getbootstrap.com)
+ */
 @font-face {
   font-family: 'Open Sans';
   src: url("../fonts/Open_Sans/OpenSans-Light.ttf");
@@ -40,9 +43,72 @@
   font-style: normal;
   font-stretch: normal; }
 
-/*!
- * Bootstrap v4.0.0 (https://getbootstrap.com)
- */
+/*
+    Flaticon icon font: Flaticon
+    Creation date: 05/03/2018 16:23
+    */
+@font-face {
+  font-family: "Flaticon";
+  src: url("../fonts/flaticon/Flaticon.eot");
+  src: url("../fonts/flaticon/Flaticon.eot?#iefix") format("embedded-opentype"), url("../fonts/flaticon/Flaticon.woff") format("woff"), url("../fonts/flaticon/Flaticon.ttf") format("truetype"), url("../fonts/flaticon/Flaticon.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  @font-face {
+    font-family: "Flaticon";
+    src: url("../fonts/flaticon/Flaticon.svg#Flaticon") format("svg"); } }
+
+.fi {
+  position: relative; }
+  .fi:hover .fi:after {
+    -webkit-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    transform: scale(0.8); }
+
+.fi:before,
+.fi:after {
+  display: inline-block;
+  font-family: "Flaticon";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-decoration: inherit;
+  text-rendering: optimizeLegibility;
+  text-transform: none;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+  font-size: 24px; }
+
+.fi:after {
+  content: "\f104";
+  position: absolute;
+  top: -10px;
+  left: -24px;
+  color: #f8f9fa;
+  font-size: 36px;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  transition: scale .2s linear; }
+
+.flaticon-social-google-plus-circular-button:before {
+  content: "\f100"; }
+
+.flaticon-social-youtube-circular-button:before {
+  content: "\f101"; }
+
+.flaticon-social-linkedin-circular-button:before {
+  content: "\f102"; }
+
+.flaticon-social-facebook-circular-button:before {
+  content: "\f103"; }
+
+.flaticon-transport:before {
+  content: "\f105"; }
+
 :root {
   --blue: #007bff;
   --indigo: #6610f2;
@@ -6607,9 +6673,28 @@ main {
     -ms-flex-direction: column;
     flex-direction: column; } }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1199) {
   main {
     padding-bottom: 1000px; } }
+
+@media screen and (max-width: 575px) {
+  h1 {
+    font-size: 30.6px;
+    line-height: 35.7px;
+    color: #000; }
+  h2 {
+    font-size: 27.2px;
+    line-height: 31.45px;
+    color: #000; }
+  h3 {
+    font-size: 23.8px;
+    line-height: 27.2px;
+    color: #000; }
+  .btn {
+    padding: 0.31875rem 0.6375rem;
+    font-size: 0.85rem;
+    line-height: 1.275;
+    border-radius: 0.25rem; } }
 
 .carousel {
   padding-top: 90px; }
