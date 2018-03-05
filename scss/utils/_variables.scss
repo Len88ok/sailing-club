@@ -1,13 +1,26 @@
-/* reset */
+//bootstrap variables
+$primary:       #87c2d4 !default;
+$secondary:     #311b65 !default;
+
+$navbar-light-color:          rgba($secondary, .5) !default;
+$navbar-light-hover-color:    rgba($secondary, .7) !default;
+$navbar-light-active-color:   rgba($secondary, .9) !default;
+$navbar-light-disabled-color: rgba($secondary, .3) !default;
+$navbar-nav-link-padding-x:         1rem !default;
+
+$dropdown-link-color:               $navbar-light-active-color !default;
+$dropdown-link-hover-color:         darken($dropdown-link-color, 15%) !default;
+$dropdown-link-hover-bg:            lighten($secondary, 60%) !default;
+$dropdown-padding-y:                0 !default;
+
+//custom variables
 $base-bg: #FFF; 
 $base-font-size: 14px; 
 $base-line-height: 1.47; 
-$base-font-family: Arial, sans-serif; 
-$custom-font-family: 'Open Sans', sans-serif; 
-$link-color: #100da9;
-$default-transition:all 0.2s linear;
+$base-font-family: "Open Sans", Roboto, "Helvetica Neue", Arial, sans-serif; 
+$custom-font-family: 'Montserrat', sans-serif; 
+$default-transition: all 0.2s linear;
 
-/* main variables */
 
 //text, titles
 $text-color: #000;

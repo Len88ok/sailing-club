@@ -5,7 +5,6 @@
 	<meta name="format-detection" content="telephone=no">
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1">
 	<title>Главная</title>
-	<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css" />	
 </head>
 <body>
@@ -71,6 +70,11 @@
 		      <li class="nav-item">
 		        <a class="nav-link" href="#">İletişim</a>
 		      </li>
+		      <li class="nav-item">
+		      	
+		      	<!-- Button trigger modal -->
+		      	<button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#regModal">Ön Kayıt</button>
+		      </li>
 		    </ul>
 		  </div>
 		</nav>
@@ -78,57 +82,233 @@
 
     <main role="main">
 
-      <div id="myCarousel" class="carousel slide" data-ride="carousel">
-        <ol class="carousel-indicators">
-          <li data-target="#myCarousel" data-slide-to="0" class=""></li>
-          <li data-target="#myCarousel" data-slide-to="1" class="active"></li>
-          <li data-target="#myCarousel" data-slide-to="2" class=""></li>
-        </ol>
-        <div class="carousel-inner">
-          <div class="carousel-item active carousel-item-left">
-            <img class="first-slide" src="img/sailing-boat.jpeg" alt="First slide">
-            <div class="container">
-              <div class="carousel-caption text-left">
-                <h1>Example headline.</h1>
-                <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>
-              </div>
-            </div>
+    <section class="carousel-section">
+    	<div id="myCarousel" class="carousel slide" data-ride="carousel">
+    	  <ol class="carousel-indicators">
+    	    <li data-target="#myCarousel" data-slide-to="0" class=""></li>
+    	    <li data-target="#myCarousel" data-slide-to="1" class="active"></li>
+    	    <li data-target="#myCarousel" data-slide-to="2" class=""></li>
+    	  </ol>
+    	  <div class="carousel-inner">
+    	    <div class="carousel-item active">
+    	      <img class="first-slide" src="img/sailing-boat.jpeg" alt="First slide">
+    	      <div class="container">
+    	        <div class="carousel-caption">
+    	          <h1>Almost 50 years in sailing</h1>
+    	          <p><a class="btn btn-lg btn-light" href="#" role="button">Learn more about us</a></p>
+    	        </div>
+    	      </div>
+    	    </div>
+    	    <div class="carousel-item">
+    	      <img class="second-slide" src="img/sea.jpeg" alt="Second slide">
+    	      <div class="container">
+    	        <div class="carousel-caption">
+    	          <h1>More than 100 champions graduated from our courses</h1>                
+    	          <p><a class="btn btn-lg btn-light" href="#" role="button">Learn more about courses</a></p>
+    	        </div>
+    	      </div>
+    	    </div>
+    	    <div class="carousel-item">
+    	      <img class="third-slide" src="img/racing.jpeg" alt="Third slide">
+    	      <div class="container">
+    	        <div class="carousel-caption">
+    	          <h1>Sailing - is the way of life</h1>
+    	          <p><a class="btn btn-lg btn-light" href="#" role="button">Browse gallery</a></p>
+    	        </div>
+    	      </div>
+    	    </div>
+    	  </div>
+    	  <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+    	    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    	    <span class="sr-only">Previous</span>
+    	  </a>
+    	  <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+    	    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    	    <span class="sr-only">Next</span>
+    	  </a>
+    	</div>
+    </section>
+
+    <section class="news-section">
+	    <div class="container">
+		    <div class="row mb-2">
+		            <div class="col-md-6">
+		              <div class="card flex-md-row mb-4 box-shadow h-md-250">
+		                <img class="card-img-left flex-auto d-none d-md-block" src="img/boat-sea-sky.jpeg">
+		                <div class="card-body d-flex flex-column align-items-start">
+		                  <strong class="d-inline-block mb-2 text-primary">Sport</strong>
+		                  <h3 class="mb-0">
+		                    <a class="text-dark" href="#">Iskenderun Yelken Kulübü</a>
+		                  </h3>
+		                  <div class="mb-1 text-muted">10.02.2018</div>
+		                  <p class="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+		                  <button type="button" class="btn btn-outline-primary">Continue reading</button>
+		                </div>
+		              </div>
+		            </div>
+		            <div class="col-md-6">
+		              <div class="card flex-md-row mb-4 box-shadow h-md-250">
+		                <div class="card-body d-flex flex-column align-items-start">
+		                  <strong class="d-inline-block mb-2 text-success">Membership</strong>
+		                  <h3 class="mb-0">
+		                    <a class="text-dark" href="#">Iskenderun Yelken Kulübü</a>
+		                  </h3>
+		                  <div class="mb-1 text-muted">02.03.2018</div>
+		                  <p class="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+		                  <button type="button" class="btn btn-outline-primary">Continue reading</button>
+		                </div>
+		                <img class="card-img-right flex-auto d-none d-md-block" src="img/boat-sea-sky.jpeg">
+		              </div>
+		            </div>
+		            <div class="col-md-6">
+		              <div class="card flex-md-row mb-4 box-shadow h-md-250">
+		                <img class="card-img-left flex-auto d-none d-md-block" src="img/boat-sea-sky.jpeg">
+		                <div class="card-body d-flex flex-column align-items-start">
+		                  <strong class="d-inline-block mb-2 text-primary">Sport</strong>
+		                  <h3 class="mb-0">
+		                    <a class="text-dark" href="#">Iskenderun Yelken Kulübü</a>
+		                  </h3>
+		                  <div class="mb-1 text-muted">10.02.2018</div>
+		                  <p class="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+		                  <button type="button" class="btn btn-outline-primary">Continue reading</button>
+		                </div>
+		              </div>
+		            </div>
+		            <div class="col-md-6">
+		              <div class="card flex-md-row mb-4 box-shadow h-md-250">
+		                <div class="card-body d-flex flex-column align-items-start">
+		                  <strong class="d-inline-block mb-2 text-success">Membership</strong>
+		                  <h3 class="mb-0">
+		                    <a class="text-dark" href="#">Iskenderun Yelken Kulübü</a>
+		                  </h3>
+		                  <div class="mb-1 text-muted">02.03.2018</div>
+		                  <p class="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+		                  <button type="button" class="btn btn-outline-primary">Continue reading</button>
+		                </div>
+		                <img class="card-img-right flex-auto d-none d-md-block" src="img/boat-sea-sky.jpeg">
+		              </div>
+		            </div>
+		          </div>
+			</div>
+		</div>
+    </section>
+      
+
+    <!-- Modal -->
+    <div class="modal fade" id="regModal" tabindex="-1" role="dialog" aria-labelledby="regModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="regModalLabel">Pre-registration</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
           </div>
-          <div class="carousel-item carousel-item-next carousel-item-left">
-            <img class="second-slide" src="img/sailing-boat.jpeg" alt="Second slide">
-            <div class="container">
-              <div class="carousel-caption">
-                <h1>Another example headline.</h1>
-                <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
-              </div>
-            </div>
+          <div class="modal-body">
+            ...
           </div>
-          <div class="carousel-item">
-            <img class="third-slide" src="img/sailing-boat.jpeg" alt="Third slide">
-            <div class="container">
-              <div class="carousel-caption text-right">
-                <h1>One more for good measure.</h1>
-                <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                <p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p>
-              </div>
-            </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Send</button>
           </div>
         </div>
-        <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a>
       </div>
+    </div>
+
+    </main>
+
+    <!--Footer-->
+	<footer class="footer">
+
+	  <div class="footer-socials">
+	      <div class="container">
+	          <!--Grid row-->
+	          <div class="row py-4 d-flex align-items-center">
+
+	              <!--Grid column-->
+	              <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
+	                  <h6 class="mb-0 white-text">Get connected with us on social networks!</h6>
+	              </div>
+	              <!--Grid column-->
+
+	              <!--Grid column-->
+	              <div class="col-md-6 col-lg-7 text-center text-md-right">
+	                  <!--Facebook-->
+	                  <a class="fb-ic ml-0"><i class="fa fa-facebook white-text mr-lg-4"> </i></a>
+	                  <!--Google +-->
+	                  <a class="gplus-ic"><i class="fa fa-google-plus white-text mr-lg-4"> </i></a>
+	                  <!--Linkedin-->
+	                  <a class="li-ic"><i class="fa fa-linkedin white-text mr-lg-4"> </i></a>
+	                  <!--Instagram-->
+	                  <a class="ins-ic"><i class="fa fa-instagram white-text mr-lg-4"> </i></a>
+	              </div>
+	              <!--Grid column-->
+
+	          </div>
+	          <!--Grid row-->
+	      </div>
+	  </div>
+
+	  <!--Footer Links-->
+	  <div class="container mt-5 mb-4 text-center text-md-left">
+	      <div class="row mt-3">
+
+	          <!--First column-->
+	          <div class="col-md-3 col-lg-4 col-xl-3 mb-4">
+	              <a class="navbar-brand" href="#">
+	                <img src="img/logo.JPG" width="120" height="100" alt="logo">
+	              </a>
+	          </div>
+	          <!--/.First column-->
+
+	          <!--Second column-->
+	          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+	              <h6 class="text-uppercase font-weight-bold"><strong>Faaliyetlerimiz</strong></h6>
+	              <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+	              <div><a href="#!">MDBootstrap</a></div>
+	              <div><a href="#!">MDWordPress</a></div>
+	              <div><a href="#!">BrandFlow</a></div>
+	          </div>
+	          <!--/.Second column-->
+
+	          <!--Third column-->
+	          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+	              <h6 class="text-uppercase font-weight-bold"><strong>Useful links</strong></h6>
+	              <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+	              <div><a href="#!">Your Account</a></div>
+	              <div><a href="#!">Become an Affiliate</a></div>
+	              <div><a href="#!">Shipping Rates</a></div>
+	              <div><a href="#!">Help</a></div>
+	          </div>
+	          <!--/.Third column-->
+
+	          <!--Fourth column-->
+	          <div class="col-md-4 col-lg-3 col-xl-3">
+	              <h6 class="text-uppercase font-weight-bold"><strong>Contact</strong></h6>
+	              <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+	              <div><i class="fa fa-home mr-3"></i> New York, NY 10012, US</div>
+	              <div><i class="fa fa-envelope mr-3"></i> info@example.com</div>
+	              <div><i class="fa fa-phone mr-3"></i> + 01 234 567 88</div>
+	              <div><i class="fa fa-print mr-3"></i> + 01 234 567 89</div>
+	          </div>
+	          <!--/.Fourth column-->
+	      </div>
+	  </div>
+	  <!--/.Footer Links-->
+
+	  <!-- Copyright-->
+	  <div class="footer-copyright py-3 text-center">
+	      <div class="container-fluid">
+	          © 2017 Copyright: <a href="https://mdbootstrap.com/material-design-for-bootstrap/"><strong> MDBootstrap.com</strong></a>
+	      </div>
+	  </div>
+	  <!--/.Copyright -->
+
+	</footer>
+	<!--/.Footer-->
 	
 	<script type="text/javascript" src="js/jquery-3.0.0.min.js"></script>
-	<script type="text/javascript" src="node_modules/popper/index.js"></script>
-	<script type="text/javascript" src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="libs/bootstrap/dist/js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="js/custom.js" ></script>
 </body>
 </html>
