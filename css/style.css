@@ -6605,6 +6605,8 @@ a.text-dark:hover, a.text-dark:focus {
     background-color: #311b65; }
   .footer-copyright {
     background-color: #815ed4; }
+  .footer hr {
+    color: #f8f9fa; }
 
 html {
   position: relative;
