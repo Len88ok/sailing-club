@@ -6607,25 +6607,26 @@ main {
     -ms-flex-direction: column;
     flex-direction: column; } }
 
-.carousel-item > img {
-  width: 100%;
-  object-fit: cover;
-  height: 90vh; }
-
-.carousel-caption {
-  z-index: 1;
-  padding: 15px; }
-  .carousel-caption:after {
-    content: "";
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    z-index: -1;
-    background-color: #87c2d4;
-    opacity: .6;
-    border-radius: 15px; }
+.carousel {
+  padding-top: 90px; }
+  .carousel-item > img {
+    width: 100%;
+    object-fit: cover;
+    height: 75vh; }
+  .carousel-caption {
+    z-index: 1;
+    padding: 15px; }
+    .carousel-caption:after {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      z-index: -1;
+      background-color: #87c2d4;
+      opacity: .6;
+      border-radius: 15px; }
 
 .news-section img {
   width: 200px;
