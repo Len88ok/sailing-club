@@ -6594,7 +6594,7 @@ section {
   padding: 2% 0; }
 
 main {
-  padding-bottom: 400px; }
+  padding-bottom: 420px; }
 
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
   body {
@@ -6606,6 +6606,10 @@ main {
     -webkit-flex-direction: column;
     -ms-flex-direction: column;
     flex-direction: column; } }
+
+@media screen and (max-width: 1200px) {
+  main {
+    padding-bottom: 1000px; } }
 
 .carousel {
   padding-top: 90px; }

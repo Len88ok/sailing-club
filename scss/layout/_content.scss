@@ -47,14 +47,16 @@ section {
 }
 
 main {
-	padding-bottom: 400px;
+	padding-bottom: 420px;
 }
 
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
     body{min-height: 100hv; width: 100%; display: flex; flex-direction: column;}
 }
 @media screen and (max-width: 1200px) {
-	
+	main {
+		padding-bottom: 1000px;
+	}
 }
 
 @media screen and (min-width: 992px){
