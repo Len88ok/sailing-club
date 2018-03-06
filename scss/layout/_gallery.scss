@@ -6,6 +6,21 @@
     background-position: center center;
     background-size: cover;
     position: relative;
+    .col-sm-6.col-md-4 {
+        height: 282.5px; 
+        .half {
+            &:first-child > img{
+                padding-bottom: 2.5px;
+            }
+            &:last-child > img{
+                padding-top: 2.5px;
+            }
+        }  
+    }
+
+    .col-sm-12.col-md-8 {
+        height: 560px;
+    }
 }
 
 /* Override bootstrap column paddings */
@@ -59,8 +74,22 @@
     background-color: transparent !important;
 }
 
-@media(max-width: 768px) {
-    body {
-        padding: 0;
+
+@media screen and (max-width: 767px) {
+    .tz-gallery {
+        .col-sm-6.col-md-4 {
+            height: 280px;
+            .half {
+                &:first-child > img{
+                    padding-bottom: 0;
+                }
+                &:last-child > img{
+                    padding-top: 0;
+                }
+            }  
+        }
+        .col-sm-12.col-md-8 {
+            height: 280px;
+        }
     }
 }

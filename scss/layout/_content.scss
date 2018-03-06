@@ -46,12 +46,9 @@ section {
 	padding: 2% 0;
 }
 
-main {
-	padding-bottom: 420px;
-}
-
 .page-heading {
 	padding-bottom: 0;
+	z-index: 1;
 	&-decor {
 		span {
 			font-size: 100px;
@@ -59,6 +56,7 @@ main {
 		}	
 	}
 	.jumbotron {
+		padding: 6rem 1rem !important;
 		background-image: url(../../img/images.jpg);
 		background-attachment: fixed;
 		background-repeat: no-repeat;
@@ -83,7 +81,6 @@ main {
         }
 	}
 	&.history {
-
 		.jumbotron {
 			background-image: url(../../img/maxresdefault.jpg);
 		}
@@ -100,6 +97,12 @@ main {
 	}
 	&-after {
 		z-index: 2;
+		font-family: $custom-font-family;
+		background-image: url(../../img/bg-1.png);
+		background-repeat: no-repeat;
+		background-position: center center;
+        background-size: cover;
+        position: relative;
 	}
 }
 
@@ -108,19 +111,30 @@ main {
 	position: relative;
 	top: -75px;
 	padding: 15px;
+	z-index: 1;
 }
 
 .title {
 	color: $primary;
+	position: relative;
+	&:after {
+		content: '';
+		position: absolute;
+		display: inline-block;
+		height: 5px;
+		width: 150px;
+		left: 50%;
+		bottom: 0;
+		transform: translateX(-50%);
+		background: url(../../img/line.png) repeat-x;
+	}
 }
 
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
     body{min-height: 100hv; width: 100%; display: flex; flex-direction: column;}
 }
 @media screen and (max-width: 1199) {
-	main {
-		padding-bottom: 1000px;
-	}
+
 }
 
 @media screen and (max-width: 991px){
@@ -140,6 +154,17 @@ main {
 }
 
 @media screen and (max-width: 575px) {
+	.page-heading {
+		.jumbotron {
+			h1 {
+				font-size: $font-size-h1*0.85;
+			}
+		}
+		&-decor span {
+			font-size: 60px;
+		}
+	}
+	.page-heading
 	h1{	
 		@include font($font-size-h1*0.85,$line-height-h1*0.85,$title-color);
 	}
