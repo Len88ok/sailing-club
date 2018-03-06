@@ -6,6 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1">
 	<title>Fotoğraf galerisi</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css" />
+	<link rel="stylesheet" href="css/baguetteBox.min.css">
 </head>
 <body>
 
@@ -19,10 +20,10 @@
 		  </button>
 		  <div class="collapse navbar-collapse" id="navbarNav">
 		    <ul class="navbar-nav">
-		      <li class="nav-item active">
-		        <a class="nav-link" href="index.html">Ana Sayfa<span class="sr-only">(current)</span></a>
+		      <li class="nav-item">
+		        <a class="nav-link" href="index.html">Ana Sayfa</a>
 		      </li>
-		      <li class="nav-item dropdown">
+		      <li class="nav-item active dropdown">
 		        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 		          Hakkimizda
 		        </a>
@@ -32,14 +33,12 @@
 		          <a class="dropdown-item" href="#"><span class="sr-only">(current)</span>Fotoğraf Galerisi</a>
 		        </div>
 		      </li>
-		      <li class="nav-item">
-		        <a class="nav-link" href="#">Yönetim Kurulu</a>
-		      </li>
 		      <li class="nav-item dropdown">
 		        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 		          Kadromuz
 		        </a>
 		        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+		          <a class="dropdown-item" href="#">Yönetim Kurulu</a>
 		          <a class="dropdown-item" href="#">Antrenörlerimiz</a>
 		          <a class="dropdown-item" href="#">Sporcularımız</a>
 		          <a class="dropdown-item" href="#">Milli Sporcularımız</a>
@@ -81,6 +80,66 @@
     </header>
 
     <main role="main">
+
+    	<section class="page-heading gallery">
+    		<div class="jumbotron p-3 p-md-5 text-white rounded bg-dark">
+	        <div class="col-md-6 px-0">
+	          <h1 class="display-4 font-italic">Fotoğraf Galerisi</h1>
+	          <div class="page-heading-decor"><span class="fi1 flaticon-waves"></span></div>
+	        </div>
+	      </div>
+    	</section>  
+
+
+    	<section class="tz-gallery">
+
+    		<div class="row">
+
+    		    <div class="col-sm-12 col-md-4">
+    		        <a class="lightbox" href="img/resim5.jpg">
+    		            <img src="img/resim5.jpg" alt="photo">
+    		        </a>
+    		    </div>
+    		    <div class="col-sm-6 col-md-4">
+    		        <a class="lightbox" href="img/yelken-yarışı3.jpg">
+    		            <img src="img/yelken-yarışı3.jpg" alt="photo">
+    		        </a>
+    		    </div>
+    		    <div class="col-sm-6 col-md-4">
+    		        <a class="lightbox" href="img/maxresdefault.jpg">
+    		            <img src="img/maxresdefault.jpg" alt="photo">
+    		        </a>
+    		    </div>
+    		    <div class="col-sm-12 col-md-8">
+    		        <a class="lightbox" href="img/racing.jpeg">
+    		            <img src="img/racing.jpeg" alt="photo">
+    		        </a>
+    		    </div>
+    		    <div class="col-sm-6 col-md-4">
+    		        <a class="lightbox" href="img/148.jpg">
+    		            <img src="img/148.jpg" alt="photo">
+    		        </a>
+    		    </div> 
+    		    <div class="col-sm-6 col-md-4">
+    		        <a class="lightbox" href="img/sailing1.jpg">
+    		            <img src="img/sailing1.jpg" alt="photo">
+    		        </a>
+    		    </div>
+    		    <div class="col-sm-6 col-md-4">
+    		        <a class="lightbox" href="img/images.jpg">
+    		            <img src="img/images.jpg" alt="photo">
+    		        </a>
+    		    </div>
+    		    <div class="col-sm-6 col-md-4">
+    		        <a class="lightbox" href="img/yelken_yarislari.jpg">
+    		            <img src="img/yelken_yarislari.jpg" alt="photo">
+    		        </a>
+    		    </div>
+
+    		</div>
+    	</section>
+
+
 
 	    <!-- Modal -->
 	    <div class="modal fade" id="regModal" tabindex="-1" role="dialog" aria-labelledby="regModalLabel" aria-hidden="true">
@@ -198,6 +257,10 @@
 	<script type="text/javascript" src="js/jquery-3.0.0.min.js"></script>
 	<script type="text/javascript" src="libs/bootstrap/dist/js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="js/custom.js" ></script>
+	<script type="text/javascript" src="js/components/baguetteBox.min.js"></script>
+	<script>
+	    baguetteBox.run('.tz-gallery');
+	</script>
 </body>
 </html>
 

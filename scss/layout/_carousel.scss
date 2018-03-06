@@ -1,6 +1,6 @@
 
 .carousel {
-	padding-top: 90px;
+	padding-top: 80px;
 	&-item {
 		 > img {
 		    width: 100%;
@@ -23,6 +23,10 @@
 			background-color: $primary;
 			opacity: .6;
 	        border-radius: 15px;
+		}
+		h1 {
+			font-weight: 700;
+			color: $gray-900;
 		}
 	}
 }

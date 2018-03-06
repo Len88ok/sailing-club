@@ -19,11 +19,11 @@
 		  </button>
 		  <div class="collapse navbar-collapse" id="navbarNav">
 		    <ul class="navbar-nav">
-		      <li class="nav-item active">
-		        <a class="nav-link" href="#">Ana Sayfa<span class="sr-only">(current)</span></a>
+		      <li class="nav-item">
+		        <a class="nav-link" href="index.html">Ana Sayfa</a>
 		      </li>
-		      <li class="nav-item dropdown">
-		        <a class="nav-link dropdown-toggle" href="index.html" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+		      <li class="nav-item active dropdown">
+		        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 		          Hakkimizda
 		        </a>
 		        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
@@ -32,14 +32,12 @@
 		          <a class="dropdown-item" href="gallery.html">Fotoğraf Galerisi</a>
 		        </div>
 		      </li>
-		      <li class="nav-item">
-		        <a class="nav-link" href="#">Yönetim Kurulu</a>
-		      </li>
 		      <li class="nav-item dropdown">
 		        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 		          Kadromuz
 		        </a>
 		        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+		          <a class="dropdown-item" href="#">Yönetim Kurulu</a>
 		          <a class="dropdown-item" href="#">Antrenörlerimiz</a>
 		          <a class="dropdown-item" href="#">Sporcularımız</a>
 		          <a class="dropdown-item" href="#">Milli Sporcularımız</a>
@@ -81,6 +79,94 @@
     </header>
 
     <main role="main">
+
+    	<section class="page-heading history">
+    		<div class="jumbotron p-3 p-md-5 text-white rounded bg-dark">
+	        <div class="col-md-6 px-0">
+	          <h1 class="display-4 font-italic">Külübün Tarihisi</h1>
+	          <div class="page-heading-decor"><span class="fi1 flaticon-waves"></span></div>
+	        </div>
+	      </div>
+    	</section>  
+
+    	<section class="history-info page-heading-after">
+    		<div class="container">
+	    		<div class="after-heading">
+		    		<div class="history-creation">
+		                <div class="row">
+		                	<div class="col-lg-6 col-md-12">
+		                        <div class="history-info-slider">
+		                        	<div id="history-slider" class="carousel slide" data-ride="carousel">
+		                        	  <div class="carousel-inner">
+		                        	    <div class="carousel-item active">
+		                        	      <img class="d-block w-100" src="img/boat-sea-sky.jpeg" alt="First slide">
+		                        	    </div>
+		                        	    <div class="carousel-item">
+		                        	      <img class="d-block w-100" src="img/resim5.jpg" alt="Second slide">
+		                        	    </div>
+		                        	    <div class="carousel-item">
+		                        	      <img class="d-block w-100" src="img/yelken_yarislari.jpg" alt="Third slide">
+		                        	    </div>
+		                        	  </div>
+		                        	  <ol class="carousel-indicators">
+									    <li data-target="#history-slider" data-slide-to="0" class="active"></li>
+									    <li data-target="#history-slider" data-slide-to="1"></li>
+									    <li data-target="#history-slider" data-slide-to="2"></li>
+									  </ol>
+		                        	</div>
+		                        </div>
+		                    </div>
+		                    <div class="col-lg-5 col-md-12 ml-auto">
+		                        <h2 class="title"><strong>Our history</strong></h2>
+		                        <h6 class="history-description">Our club was founded in <span>1970</span> in Iskenderun</h6>
+		                        <p class="history-description">We re-styled every Bootstrap element to make it resemble Material Design and also fit with each other. All the Bootstrap components that you need in a development have been re-design with the new look. Besides the numerous basic elements, we have also created additional classes. All these items will help you take your project to the next level.</p>
+		                        <p class="history-description">We re-styled every Bootstrap element to make it resemble Material Design and also fit with each other. All the Bootstrap components that you need in a development have been re-design with the new look. Besides the numerous basic elements, we have also created additional classes. All these items will help you take your project to the next level.</p>
+		                         <p class="history-description">We re-styled every Bootstrap element to make it resemble Material Design and also fit with each other. All the Bootstrap components that you need in a development have been re-design with the new look. Besides the numerous basic elements, we have also created additional classes. All these items will help you take your project to the next level.</p>
+		                    </div>                   
+		                </div>
+		            </div>
+		            <div class="history-best">
+		            	<div class="row">
+		            		<div class="col-lg-3 col-md-12">
+								<h3 class="history-best-title">
+									Services									
+								</h3>
+								<div class="history-best-description">
+									Yaz Kursları,
+									Yetişkin Kursları,
+									Yarış Takımı,
+								</div>
+		            		</div>
+		            		<div class="col-lg-3 col-md-12">
+								<h3 class="history-best-title">
+									Established
+								</h3>
+								<div class="history-best-description">
+									1970
+								</div>
+		            		</div>
+		            		<div class="col-lg-3 col-md-12">
+								<h3 class="history-best-title">
+									Location
+								</h3>
+								<div class="history-best-description">
+									Iskenderun, Hatay
+								</div>
+		            		</div>
+		            		<div class="col-lg-3 col-md-12">
+								<h3 class="history-best-title">
+									Employees
+								</h3>
+								<div class="history-best-description">
+									25
+								</div>
+		            		</div>
+		            	</div>
+		            </div>
+	            </div>
+            </div>
+    	</section>
+
 	    <!-- Modal -->
 	    <div class="modal fade" id="regModal" tabindex="-1" role="dialog" aria-labelledby="regModalLabel" aria-hidden="true">
 	      <div class="modal-dialog" role="document">

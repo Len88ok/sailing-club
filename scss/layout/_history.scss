@@ -1,0 +1,43 @@
+.history {
+	&-info {
+		font-family: $custom-font-family;
+		background-image: url(../../img/bg-1.png);
+		background-repeat: no-repeat;
+		background-position: center center;
+        background-size: cover;
+        position: relative;
+		&-slider {
+			height: 100%;
+			img {
+				height: 100%;
+				width: 100%;
+				object-fit: cover;
+			}
+		}	
+	}
+	&-description {
+		margin-bottom: 0;
+		span {
+			font-size: 18px;
+			font-weight: 700;
+			color: $primary;
+		}
+	}
+	&-best {
+		padding: 2% 0;
+		&-title {
+			color: $primary;
+		} 
+	}
+}
+
+#history-slider {
+	height: 100%;
+	padding-top: 0;
+	.carousel {
+		&-inner,
+		&-item {
+			height: 100%;
+		}
+	}
+}
