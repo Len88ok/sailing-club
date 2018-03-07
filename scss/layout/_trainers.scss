@@ -1,0 +1,47 @@
+.trainer {
+	&-photo {
+		height: 250px;
+		width: 250px;
+		img {
+			height: 100%;
+			object-fit: cover;
+		}
+	}
+	&-contacts {
+		.fi:after {
+			color: $primary;
+		}
+		p {
+			padding: 0;
+		}		
+	}
+	&-socials {
+		padding-left: 36px;
+	}
+}
+
+.circle-icon {
+	width: 40px;
+	height: 40px;
+	margin-top: -45px;
+	margin-bottom: 15px;
+}
+
+@media screen and (max-width: 1199px) {
+	.trainer {
+		&-photo {
+			height: 200px;
+			width: 200px;
+		}
+	}
+}
+
+
+@media screen and (max-width: 991px) {
+	.trainer {
+		&-photo {
+			height: 150px;
+			width: 150px;
+		}
+	}
+}

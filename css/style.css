@@ -6630,7 +6630,7 @@ a.text-dark:hover, a.text-dark:focus {
 ================================================================================
 */
 .footer {
-  position: relative;
+  position: absolute;
   bottom: 0;
   width: 100%;
   height: auto;
@@ -6656,7 +6656,8 @@ html, body {
 body {
   font-family: "Open Sans", Roboto, "Helvetica Neue", Arial, sans-serif;
   overflow-x: hidden;
-  overflow-y: auto; }
+  overflow-y: auto;
+  padding-bottom: 430px; }
 
 /* titles */
 p {
@@ -6705,7 +6706,7 @@ section {
     line-height: 1; }
   .page-heading .jumbotron {
     padding: 6rem 1rem !important;
-    background-image: url(../../img/images.jpg);
+    background-image: url(../../img/sailing-boat.jpeg);
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center center;
@@ -6724,7 +6725,7 @@ section {
       bottom: 0;
       z-index: -1;
       background-color: #311b65;
-      opacity: .47; }
+      opacity: .37; }
   .page-heading.history .jumbotron {
     background-image: url(../../img/maxresdefault.jpg); }
   .page-heading.gallery .jumbotron {
@@ -6762,6 +6763,29 @@ section {
     -ms-transform: translateX(-50%);
     transform: translateX(-50%);
     background: url(../../img/line.png) repeat-x; }
+  .title-boat {
+    position: relative;
+    padding-left: 40px;
+    line-height: 2; }
+    .title-boat:after {
+      content: "\f104";
+      display: inline-block;
+      font-family: "Flaticon";
+      font-style: normal;
+      font-weight: normal;
+      font-variant: normal;
+      line-height: 1;
+      text-decoration: inherit;
+      text-rendering: optimizeLegibility;
+      text-transform: none;
+      -moz-osx-font-smoothing: grayscale;
+      -webkit-font-smoothing: antialiased;
+      font-smoothing: antialiased;
+      position: absolute;
+      top: 18px;
+      left: 0;
+      color: #311b65;
+      font-size: 36px; }
 
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
   body {
@@ -6773,6 +6797,10 @@ section {
     -webkit-flex-direction: column;
     -ms-flex-direction: column;
     flex-direction: column; } }
+
+@media screen and (max-width: 991px) {
+  body {
+    padding-bottom: 960px; } }
 
 @media (min-width: 768px) {
   .page-heading .jumbotron {
@@ -6827,7 +6855,7 @@ section {
 
 .news-section img {
   width: 200px;
-  height: 250px;
+  height: 200px;
   object-fit: cover; }
 
 .news-section h3 > a {
@@ -6996,6 +7024,93 @@ section {
 .success-list {
   list-style-type: circle;
   color: #311b65; }
+
+.manager-info {
+  width: 300px;
+  height: auto;
+  border-radius: 21px; }
+
+.manager-photo {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  margin: auto; }
+  .manager-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 21px 21px 0 0; }
+
+.managment-icon {
+  width: 80px;
+  height: 80px; }
+
+.managment-contacts {
+  list-style-type: none;
+  padding-left: 0; }
+
+@media screen and (max-width: 767px) {
+  .manager-info {
+    width: 250px; }
+  .manager-photo {
+    height: 200px; } }
+
+.trainer-photo {
+  height: 250px;
+  width: 250px; }
+  .trainer-photo img {
+    height: 100%;
+    object-fit: cover; }
+
+.trainer-contacts .fi:after {
+  color: #87c2d4; }
+
+.trainer-contacts p {
+  padding: 0; }
+
+.trainer-socials {
+  padding-left: 36px; }
+
+.circle-icon {
+  width: 40px;
+  height: 40px;
+  margin-top: -45px;
+  margin-bottom: 15px; }
+
+@media screen and (max-width: 1199px) {
+  .trainer-photo {
+    height: 200px;
+    width: 200px; } }
+
+@media screen and (max-width: 991px) {
+  .trainer-photo {
+    height: 150px;
+    width: 150px; } }
+
+.athlet-photo {
+  width: 100%;
+  height: 225px;
+  position: relative;
+  z-index: 1; }
+  .athlet-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; }
+
+.athlet-info {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #311b65;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+  transition: opacity .2s linear; }
+
+.athlets-block .card:hover .athlet-info {
+  opacity: 0.7; }
 
 /* Slider */
 .slick-slider {
