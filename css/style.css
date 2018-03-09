@@ -137,7 +137,8 @@
   font-smoothing: antialiased; }
 
 .flaticon-waves:before {
-  content: "\f100"; }
+  content: "\f100";
+  margin-left: -5px; }
 
 .flaticon-transport:before {
   content: "\f101"; }
@@ -6756,13 +6757,15 @@ section {
     position: absolute;
     display: inline-block;
     height: 5px;
-    width: 150px;
+    width: 144px;
     left: 50%;
     bottom: 0;
     -webkit-transform: translateX(-50%);
     -ms-transform: translateX(-50%);
     transform: translateX(-50%);
-    background: url(../../img/line.png) repeat-x; }
+    background: url(../../img/waves.png) repeat-x; }
+  .title.text-secondary:after {
+    background: url(../../img/river-under.png) repeat-x; }
   .title-boat {
     position: relative;
     padding-left: 40px;

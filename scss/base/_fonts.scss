@@ -151,7 +151,7 @@ font-style: normal;
 	font-smoothing: antialiased;
 }
 
-.flaticon-waves:before { content: "\f100"; }
+.flaticon-waves:before { content: "\f100"; margin-left: -5px; }
 .flaticon-transport:before { content: "\f101"; }
 
 $font-Flaticon-waves: "\f100";
