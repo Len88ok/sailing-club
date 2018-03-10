@@ -14,7 +14,7 @@
 		position: absolute;
 		width: 100%;
 		height: 100%;
-		background-color: $secondary;
+		background-color: darken($primary, 40%);
 		left: 0;
 		top: 0;
 		bottom: 0;
@@ -22,12 +22,21 @@
 		opacity: 0;
 		transition: opacity .2s linear;
 	}
+	&-about {
+		font-family: $custom-font-family;
+		h5 {
+			font-weight: 600;
+		}
+		span {
+			color: darken($primary, 50%);
+		}
+	}
 }
 
 .athlets-block {
 	.card:hover {
 		.athlet-info {
-			opacity: 0.7;
+			opacity: 0.85;
 		}
 	}
 }
