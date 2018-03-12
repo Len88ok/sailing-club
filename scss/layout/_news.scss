@@ -36,6 +36,13 @@
 			text-overflow: ellipsis;
 		}
 	}
+	&-post {
+		img {
+			max-width: 40%;
+			max-height: 250px;
+			object-fit: cover;
+		}
+	}
 }
 
 

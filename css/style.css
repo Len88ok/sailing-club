@@ -6834,6 +6834,11 @@ button:focus {
   overflow: hidden;
   text-overflow: ellipsis; }
 
+.news-post img {
+  max-width: 40%;
+  max-height: 250px;
+  object-fit: cover; }
+
 .history-info-slider {
   height: 100%; }
   .history-info-slider img {
