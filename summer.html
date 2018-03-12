@@ -265,18 +265,62 @@
 	    <div class="modal fade" id="regModal" tabindex="-1" role="dialog" aria-labelledby="regModalLabel" aria-hidden="true">
 	      <div class="modal-dialog" role="document">
 	        <div class="modal-content">
-	          <div class="modal-header">
+	          <div class="modal-header bg-primary">
 	            <h5 class="modal-title" id="regModalLabel">Pre-registration</h5>
 	            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
 	              <span aria-hidden="true">&times;</span>
 	            </button>
 	          </div>
 	          <div class="modal-body">
-	            ...
+	            <div class="row">
+    				<form>
+    					<div class="col-sm-12">
+    						<div class="row">
+    							<div class="col-sm-6 form-group">
+    								<label for="reg-name">First Name</label>
+    								<input id="reg-name" type="text" placeholder="Enter First Name Here.." class="form-control">
+    							</div>
+    							<div class="col-sm-6 form-group">
+    								<label for="reg-surname">Last Name</label>
+    								<input id="reg-surname" type="text" placeholder="Enter Last Name Here.." class="form-control">
+    							</div>
+    						</div>					
+    						<div class="form-group">
+    							<label for="reg-address">Address</label>
+    							<textarea id="reg-address" placeholder="Enter Address Here.." rows="3" class="form-control"></textarea>
+    						</div>	
+    						<div class="row">
+    							<div class="col-sm-6 form-group">
+    								<label for="reg-age">Age</label>
+    								<input id="reg-age" type="text" placeholder="Enter Age Here.." class="form-control">
+    							</div>		
+    							<div class="col-sm-6 form-group">
+    								<label for="reg-course">Course</label>
+    								<select id=="reg-course" class="form-control">
+									  <option>Summer courses</option>
+									  <option>Adult courses</option>
+									  <option>Racing team</option>
+									</select>
+    							</div>	
+    						</div>						
+    					<div class="form-group">
+    						<label for="reg-phone">Phone Number</label>
+    						<input id="reg-phone" type="text" placeholder="Enter Phone Number Here.." class="form-control">
+    					</div>		
+    					<div class="form-group">
+    						<label for="reg-email">Email Address</label>
+    						<input id="reg-email" type="text" placeholder="Enter Email Address Here.." class="form-control">
+    					</div>	
+    					<div class="form-group">
+							<label for="reg-comment">Comment</label>
+							<textarea id="reg-comment" placeholder="If you have any questions type here.." rows="3" class="form-control"></textarea>
+						</div>	
+    					</div>
+    				</form> 
+    				</div>
 	          </div>
 	          <div class="modal-footer">
-	            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-	            <button type="button" class="btn btn-primary">Send</button>
+				<button type="button" class="btn btn-lg btn-info">Send form</button>	
 	          </div>
 	        </div>
 	      </div>

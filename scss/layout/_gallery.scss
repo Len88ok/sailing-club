@@ -75,7 +75,7 @@
 }
 
 
-@media screen and (max-width: 767px) {
+@include media-breakpoint-down(sm) {
     .tz-gallery {
         .col-sm-6.col-md-4 {
             height: 280px;

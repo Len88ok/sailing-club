@@ -27,7 +27,7 @@
 	margin-bottom: 15px;
 }
 
-@media screen and (max-width: 1199px) {
+@include media-breakpoint-down(lg) {
 	.trainer {
 		&-photo {
 			height: 200px;
@@ -37,7 +37,7 @@
 }
 
 
-@media screen and (max-width: 991px) {
+@include media-breakpoint-down(md) {
 	.trainer {
 		&-photo {
 			height: 150px;
