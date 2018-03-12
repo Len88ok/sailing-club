@@ -7108,6 +7108,10 @@ button:focus {
     font-size: 36px;
     letter-spacing: 3px; }
 
+@media (max-width: 991.98px) {
+  .courses-price {
+    width: 90%; } }
+
 .contacts-list {
   list-style-type: none;
   padding-left: 0; }
