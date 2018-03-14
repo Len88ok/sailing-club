@@ -6649,7 +6649,7 @@ button:focus {
     line-height: 1; }
   .page-heading .jumbotron {
     padding: 6rem 1rem !important;
-    background-image: url(../../img/sailing-boat.jpeg);
+    background-image: url(../img/sailing-boat.jpeg);
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center center;
@@ -6670,15 +6670,15 @@ button:focus {
       background-color: #000;
       opacity: .37; }
   .page-heading.history .jumbotron {
-    background-image: url(../../img/maxresdefault.jpg); }
+    background-image: url(../img/maxresdefault.jpg); }
   .page-heading.gallery .jumbotron {
-    background-image: url(../../img/148.jpg); }
+    background-image: url(../img/148.jpg); }
   .page-heading.success .jumbotron {
-    background-image: url(../../img/yelken-yarışı3.jpg); }
+    background-image: url(../img/yelken-yarışı3.jpg); }
   .page-heading-after {
     z-index: 2;
     font-family: "Montserrat", sans-serif;
-    background-image: url(../../img/bg5.jpg);
+    background-image: url(../img/bg5.jpg);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -6706,9 +6706,9 @@ button:focus {
     -webkit-transform: translateX(-50%);
     -ms-transform: translateX(-50%);
     transform: translateX(-50%);
-    background: url(../../img/waves.png) repeat-x; }
+    background: url(../img/waves.png) repeat-x; }
   .title.text-secondary:after {
-    background: url(../../img/river-under.png) repeat-x; }
+    background: url(../img/river-under.png) repeat-x; }
   .title-boat {
     position: relative;
     padding-left: 40px;

@@ -64,7 +64,7 @@ button:focus {
 	}
 	.jumbotron {
 		padding: 6rem 1rem !important;
-		background-image: url(../../img/sailing-boat.jpeg);
+		background-image: url(../img/sailing-boat.jpeg);
 		background-attachment: fixed;
 		background-repeat: no-repeat;
 		background-position: center center;
@@ -89,23 +89,23 @@ button:focus {
 	}
 	&.history {
 		.jumbotron {
-			background-image: url(../../img/maxresdefault.jpg);
+			background-image: url(../img/maxresdefault.jpg);
 		}
 	}
 	&.gallery {
 		.jumbotron {
-			background-image: url(../../img/148.jpg);
+			background-image: url(../img/148.jpg);
 		}
 	}
 	&.success {
 		.jumbotron {
-			background-image: url(../../img/yelken-yarışı3.jpg);
+			background-image: url(../img/yelken-yarışı3.jpg);
 		}
 	}
 	&-after {
 		z-index: 2;
 		font-family: $custom-font-family;
-		background-image: url(../../img/bg5.jpg);
+		background-image: url(../img/bg5.jpg);
 		background-repeat: no-repeat;
 		background-position: center center;
         background-size: cover;
@@ -134,11 +134,11 @@ button:focus {
 		left: 50%;
 		bottom: 0;
 		transform: translateX(-50%);
-		background: url(../../img/waves.png) repeat-x;
+		background: url(../img/waves.png) repeat-x;
 	}
 	&.text-secondary {
 		&:after {
-			background: url(../../img/river-under.png) repeat-x;			
+			background: url(../img/river-under.png) repeat-x;			
 		}
 	}
 	&-boat {
